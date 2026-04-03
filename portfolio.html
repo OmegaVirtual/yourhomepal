@@ -1,0 +1,179 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Before & After | YourHomePal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo-text">YourHomePal</a>
+
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+            <nav class="nav-links" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="why-us.html">Why Us</a>
+                <a href="portfolio.html">Our Work</a>
+                <a href="contact.html" class="btn-primary">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= PAGE HEADER ================= -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Before & After</h1>
+            <p>
+                Real home improvement projects completed across
+                <strong>Cumbria only</strong>.
+                High-quality workmanship you can trust.
+            </p>
+            <p style="margin-top:10px;color:#6b7280;">
+                Click any image to view it in full size.
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= BEFORE & AFTER ================= -->
+    <section class="before-after">
+        <div class="container">
+
+            <!-- PROJECT 1 -->
+            <div class="ba-item">
+                <div class="ba-images">
+                    <div class="ba-image">
+                        <span>Before</span>
+                        <img src="images/before-after/project1-before.jpg"
+                             alt="Before renovation"
+                             class="portfolio-img">
+                    </div>
+
+                    <div class="ba-image">
+                        <span>After</span>
+                        <img src="images/before-after/project1-after.jpg"
+                             alt="After renovation"
+                             class="portfolio-img">
+                    </div>
+                </div>
+
+                <div class="ba-info">
+                    <h3>Living Room Renovation</h3>
+                    <p>
+                        Complete plaster repairs, surface preparation,
+                        and full repainting delivering a smooth,
+                        modern finish.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROJECT 2 -->
+            <div class="ba-item">
+                <div class="ba-images">
+                    <div class="ba-image">
+                        <span>Before</span>
+                        <img src="images/before-after/p2-before.jpg"
+                             alt="Before renovation"
+                             class="portfolio-img">
+                    </div>
+
+                    <div class="ba-image">
+                        <span>After</span>
+                        <img src="images/before-after/p2-after.jpg"
+                             alt="After renovation"
+                             class="portfolio-img">
+                    </div>
+                </div>
+
+                <div class="ba-info">
+                    <h3>Living Room Refresh</h3>
+                    <p>
+                        Detailed plaster repair and wall preparation,
+                        followed by professional painting and finishing.
+                    </p>
+                </div>
+            </div>
+
+            <!-- PROJECT 3 -->
+            <div class="ba-item">
+                <div class="ba-images">
+                    <div class="ba-image">
+                        <span>Before</span>
+                        <img src="images/before-after/project2-before.jpg"
+                             alt="Before bathroom"
+                             class="portfolio-img">
+                    </div>
+
+                    <div class="ba-image">
+                        <span>After</span>
+                        <img src="images/before-after/project2-after.jpg"
+                             alt="After bathroom"
+                             class="portfolio-img">
+                    </div>
+                </div>
+
+                <div class="ba-info">
+                    <h3>Bathroom Upgrade</h3>
+                    <p>
+                        Tiling, plastering, fixture installation,
+                        and clean finishing completed to a high standard.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= IMAGE VIEWER ================= -->
+    <div id="imageViewer"
+         onclick="closeImage()"
+         style="
+        display:none;
+        position:fixed;
+        inset:0;
+        background:rgba(0,0,0,0.9);
+        z-index:9999;
+        justify-content:center;
+        align-items:center;
+        cursor:pointer;
+     ">
+        <img id="viewerImg"
+             src=""
+             style="
+            max-width:95%;
+            max-height:95%;
+            box-shadow:0 0 30px rgba(0,0,0,0.6);
+         ">
+    </div>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        © 2025 YourHomePal · Home Improvement Services · Cumbria, UK
+    </footer>
+
+    <!-- ================= SCRIPTS ================= -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+
+        document.querySelectorAll('.portfolio-img').forEach(img => {
+            img.addEventListener('click', () => {
+                document.getElementById('viewerImg').src = img.src;
+                document.getElementById('imageViewer').style.display = 'flex';
+            });
+        });
+
+        function closeImage() {
+            document.getElementById('imageViewer').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

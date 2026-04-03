@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us | YourHomePal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="logo-text">YourHomePal</a>
+
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+        <nav class="nav-links" id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="why-us.html">Why Us</a>
+            <a href="portfolio.html">Our Work</a>
+            <a href="contact.html" class="btn-primary">Get Quote</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+    <div class="container">
+        <h1>Get In Touch</h1>
+        <p>
+            Ready to improve your home? Contact us today for a free,
+            no-obligation quote across <strong>Cumbria only</strong>.
+        </p>
+    </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="contact-modern">
+    <div class="container contact-grid">
+
+        <!-- LEFT INFO -->
+        <div class="contact-details">
+            <h2>Let’s Talk</h2>
+
+            <p class="contact-lead">
+                Ready to transform your home? Get in touch for a free
+                consultation and honest advice.
+            </p>
+
+            <div class="contact-item">
+                <span class="icon">📞</span>
+                <div>
+                    <strong>Phone</strong>
+                    <p><a href="tel:07379934151">07379 934151</a></p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span class="icon">✉️</span>
+                <div>
+                    <strong>Email</strong>
+                    <p>
+                        <a href="mailto:contact@yourhomepal.uk">
+                            contact@yourhomepal.uk
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <span class="icon">📍</span>
+                <div>
+                    <strong>Location</strong>
+                    <p>Serving Cumbria only</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT FORM -->
+        <div class="contact-form-card">
+            <h3>Send us a message</h3>
+            <p class="form-sub">
+                Fill out the form and we’ll respond as soon as possible.
+            </p>
+
+            <form action="mailto:contact@yourhomepal.uk" method="post" enctype="text/plain">
+                <label>Full Name</label>
+                <input type="text" name="name" placeholder="Your name" required>
+
+                <label>Email Address</label>
+                <input type="email" name="email" placeholder="you@example.com" required>
+
+                <label>Phone Number</label>
+                <input type="tel" name="phone" placeholder="Optional">
+
+                <label>Service Interested In</label>
+                <input type="text" name="service" placeholder="e.g. Painting, Repairs">
+
+                <label>Message</label>
+                <textarea name="message" placeholder="Tell us about your project" required></textarea>
+
+                <button type="submit" class="btn-primary">Send Message</button>
+            </form>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    © 2025 YourHomePal · Home Improvement Services · Cumbria, UK
+</footer>
+
+<!-- ================= MOBILE NAV SCRIPT ================= -->
+<script>
+function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

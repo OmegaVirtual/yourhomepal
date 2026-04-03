@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YourHomePal | Home Improvement Services in Cumbria</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="navbar">
+        <div class="navbar-inner">
+            <a href="index.html" class="logo-text">YourHomePal</a>
+
+            <div class="hamburger" onclick="toggleMenu()">☰</div>
+
+            <nav class="nav-links" id="navMenu">
+                <a href="index.html">Home</a>
+                <a href="services.html">Services</a>
+                <a href="why-us.html">Why Us</a>
+                <a href="portfolio.html">Our Work</a>
+                <a href="contact.html" class="btn-primary">Get Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <div class="container hero-inner">
+
+            <div class="hero-text">
+                <h1>Your Trusted Partner for<br><span>Home Services</span></h1>
+
+                <p>
+                    From painting to remodeling, we deliver reliable,
+                    high-quality home improvement services across
+                    <strong>Cumbria only</strong>.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="contact.html" class="btn-primary">Get Started</a>
+                    <a href="services.html" class="btn-outline">View Services</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div><strong>10+</strong><br>Services</div>
+                    <div><strong>100%</strong><br>Satisfaction</div>
+                    <div><strong>Local</strong><br>Cumbria Based</div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <img src="images/yhp.png" alt="YourHomePal Logo">
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= SERVICES ================= -->
+    <section class="services">
+        <div class="container">
+
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Professional home improvement services delivered with care and quality.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card"><i class="fa-solid fa-paint-roller"></i><br>Painting</div>
+                <div class="service-card"><i class="fa-solid fa-house"></i><br>Remodeling</div>
+                <div class="service-card"><i class="fa-solid fa-border-all"></i><br>Drywall & Ceiling</div>
+                <div class="service-card"><i class="fa-solid fa-door-open"></i><br>Windows & Doors</div>
+                <div class="service-card"><i class="fa-solid fa-wheelchair"></i><br>Safety & Mobility</div>
+                <div class="service-card"><i class="fa-solid fa-hammer"></i><br>Carpentry</div>
+                <div class="service-card"><i class="fa-solid fa-couch"></i><br>Interior Improvements</div>
+                <div class="service-card"><i class="fa-solid fa-toolbox"></i><br>Home Repairs</div>
+            </div>
+
+            <div style="text-align:center;margin-top:40px;">
+                <a href="services.html" class="btn-primary">View All Services</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+        <h2>Need Help With Your Home?</h2>
+        <p>Serving Cumbria only — get your free quote today.</p>
+        <a href="contact.html" class="btn-secondary">Contact Us</a>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+        © 2025 YourHomePal · Home Improvement Services · Cumbria, UK
+    </footer>
+
+    <!-- ================= MOBILE NAV SCRIPT ================= -->
+    <script>
+        function toggleMenu() {
+            document.getElementById("navMenu").classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>
